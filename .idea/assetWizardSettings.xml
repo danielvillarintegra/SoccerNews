@@ -18,7 +18,7 @@
                                 <PersistentState>
                                   <option name="values">
                                     <map>
-                                      <entry key="url" value="file:/$USER_HOME$/AppData/Local/Android/Sdk/icons/material/materialicons/favorite/baseline_favorite_24.xml" />
+                                      <entry key="url" value="file:/$USER_HOME$/AppData/Local/Android/Sdk/icons/material/materialicons/local_florist/baseline_local_florist_24.xml" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -28,7 +28,7 @@
                         </option>
                         <option name="values">
                           <map>
-                            <entry key="outputName" value="ic_favorite" />
+                            <entry key="outputName" value="media" />
                             <entry key="sourceFile" value="C:\Users\Daniel\Documents\DIO\DIO-Santander2022\App Nativo Sobre Futebol Feminino com Android Jetpack e Java" />
                           </map>
                         </option>
