@@ -82,6 +82,7 @@
     <orderEntry type="library" name="Gradle: androidx.navigation:navigation-ui:2.5.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.google.android.material:material:1.6.1@aar" level="project" />
     <orderEntry type="library" name="Gradle: androidx.appcompat:appcompat:1.4.2@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.squareup.picasso:picasso:2.8@aar" level="project" />
     <orderEntry type="library" name="Gradle: androidx.viewpager2:viewpager2:1.0.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: androidx.navigation:navigation-fragment:2.5.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: androidx.fragment:fragment-ktx:1.5.0@aar" level="project" />
@@ -114,6 +115,7 @@
     <orderEntry type="library" name="Gradle: androidx.lifecycle:lifecycle-runtime:2.5.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: androidx.lifecycle:lifecycle-viewmodel:2.5.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.exifinterface:exifinterface:1.0.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: androidx.versionedparcelable:versionedparcelable:1.1.1@aar" level="project" />
     <orderEntry type="library" name="Gradle: androidx.lifecycle:lifecycle-livedata-ktx:2.5.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: androidx.lifecycle:lifecycle-livedata:2.5.0@aar" level="project" />

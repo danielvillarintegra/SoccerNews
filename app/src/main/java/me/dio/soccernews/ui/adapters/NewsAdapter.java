@@ -1,5 +1,7 @@
 package me.dio.soccernews.ui.adapters;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -8,7 +10,10 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.squareup.picasso.Picasso;
+
 import java.util.List;
+import java.util.Objects;
 
 import me.dio.soccernews.databinding.NewsItemBinding;
 import me.dio.soccernews.domain.News;
@@ -55,7 +60,12 @@ public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.ViewHolder> {
         News news = this.news.get(position);
         viewHolder.binding.tvTitle.setText(news.getTitle());
         viewHolder.binding.tvDescription.setText(news.getDescription());
-
+        Picasso.get().load(news.getImage()).into(viewHolder.binding.ivThumbnail);
+        viewHolder.binding.btOpenLink.setOnClickListener(view -> {
+            Intent i = new Intent(Intent.ACTION_VIEW);
+            i.setData(Uri.parse(news.getLink()));
+            Objects.requireNonNull(viewHolder).itemView.getContext().startActivity(i);
+        });
     }
 
     // Return the size of your dataset (invoked by the layout manager)
