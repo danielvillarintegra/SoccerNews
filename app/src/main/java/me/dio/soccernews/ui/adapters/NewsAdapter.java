@@ -20,10 +20,12 @@ import me.dio.soccernews.domain.News;
 
 public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.ViewHolder> {
 
-    private List<News> news;
+    private final List<News> news;
+    private final View.OnClickListener favoriteListener;
 
-    public NewsAdapter(List<News> news) {
+    public NewsAdapter(List<News> news, View.OnClickListener favoriteListener) {
         this.news = news;
+        this.favoriteListener = favoriteListener;
     }
 
     /**
@@ -61,11 +63,23 @@ public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.ViewHolder> {
         viewHolder.binding.tvTitle.setText(news.getTitle());
         viewHolder.binding.tvDescription.setText(news.getDescription());
         Picasso.get().load(news.getImage()).into(viewHolder.binding.ivThumbnail);
+        // Implementação da funcionalidade de "Abrir Link"
         viewHolder.binding.btOpenLink.setOnClickListener(view -> {
             Intent i = new Intent(Intent.ACTION_VIEW);
             i.setData(Uri.parse(news.getLink()));
             Objects.requireNonNull(viewHolder).itemView.getContext().startActivity(i);
         });
+
+        // Implementação da funcionalidade de "Compartilhar"
+        viewHolder.binding.ivShare.setOnClickListener(view -> {
+            Intent i = new Intent(Intent.ACTION_SEND);
+            i.setType("text/plain");
+            i.putExtra(Intent.EXTRA_SUBJECT , news.getTitle());
+            i.putExtra(Intent.EXTRA_TEXT , news.getLink());
+            viewHolder.itemView.getContext().startActivity(Intent.createChooser(i, "Share"));
+        });
+        // Implementação da funcionalidade de "Favoritar" (O evento será instanciado pelo Fragment())
+        viewHolder.binding.ivFavorite.setOnClickListener(this.favoriteListener);
     }
 
     // Return the size of your dataset (invoked by the layout manager)
