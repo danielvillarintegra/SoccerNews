@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: androidx.room:room-rxjava3:2.4.2@aar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../dio-inter-mobile-20210801/m25-criando-um-app-para-apresentar-seu-portfolio-do-github/app-repositories-master/.gradle/7.0.2/caches/transforms-3/f34f677294407bdbf33c33bc177622f2/transformed/room-rxjava3-2.4.2/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../dio-inter-mobile-20210801/m25-criando-um-app-para-apresentar-seu-portfolio-do-github/app-repositories-master/.gradle/7.0.2/caches/transforms-3/f34f677294407bdbf33c33bc177622f2/transformed/room-rxjava3-2.4.2/res" />
+      <root url="file://$PROJECT_DIR$/../dio-inter-mobile-20210801/m25-criando-um-app-para-apresentar-seu-portfolio-do-github/app-repositories-master/.gradle/7.0.2/caches/transforms-3/f34f677294407bdbf33c33bc177622f2/transformed/room-rxjava3-2.4.2/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../dio-inter-mobile-20210801/m25-criando-um-app-para-apresentar-seu-portfolio-do-github/app-repositories-master/.gradle/7.0.2/caches/modules-2/files-2.1/androidx.room/room-rxjava3/2.4.2/4dff1b0de927d1da1fcb921c12909b171e02a3dd/room-rxjava3-2.4.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
